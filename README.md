@@ -10,7 +10,7 @@
 📌  [https://todoapp365.netlify.app](https://todoapp365.netlify.app)
 
 >테스트 계정 <br/> 
-> 아이디 : test@test.com 비밀번호 : password!@
+> 아이디 : test00@test.com 비밀번호 : password!@
 
 ## 기능 시연 GIF
 ### ⭐️ 로그인 , 회원가입
@@ -132,7 +132,7 @@ export const CheckBox = styled.div`
 
 - TodoList 업데이트를 하는 함수가 여러 폴더에 있었습니다.
 - `context api` + `useReducer`를 이용해서 업데이트함수를 `todoItem.jsx`로 모았습니다.
-    - 한 곳에서 관리하기 때문에 유지보수가 편해졌습니다
+    - 한 곳에서 관리하기 때문에 유지보수가 편해졌습니다.
     - props drlling을 하지 않아도 됩니다.
 
 ```javascript
