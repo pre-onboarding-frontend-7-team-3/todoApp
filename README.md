@@ -25,9 +25,17 @@
 - [폴더 구조](#폴더-구조)
 - [팀 코드 컨벤션](#팀-코드-컨벤션)
 
+
+
 ## 리팩토링
 
 #### 라이브 코드리뷰로 각자 구현한 코드에 대한 피드백 및 리팩토링 후 Best Practice를 채택했습니다.
+채택 기준
+
+1. 기능작동
+2. 최적화를 위한 메모리제이션 메소드 사용
+3. 컴포넌트 나누기
+4. 재사용가능한 모듈
 
 - [ ] React Suspense + dynamic import로 lazy loading
 
@@ -142,18 +150,14 @@ const TodoList = () => {
   );
 };
 
-
 // todoItem.jsx
 const TodoItem = ({ list }) => {
-
   const dispatch = useContext(dispatchContext);
 
   const handleTodoUpdate = useCallback(
     content => {
-      // console.log('content', content);
       updateTodoApi(content.id, content.todo, content.isCompleted)
         .then(res => {
-          console.log('res', res);
           dispatch({ type: 'EDIT', todo: res.data });
         })
         .catch(err => {
@@ -161,19 +165,6 @@ const TodoItem = ({ list }) => {
         });
     },
     [list, content]
-  );
-
-  const handleTodoDelete = useCallback(
-    id => {
-      deleteTodoApi(id)
-        .then(res => {
-          dispatch({ type: 'DELETE', id });
-        })
-        .catch(err => {
-          console.log('주 에러 : ', err);
-        });
-    },
-    [list]
   );
 ...
 }
