@@ -267,8 +267,7 @@ const TodoItem = ({ list }) => {
 ...
 }
 ```
-
-참고 파일: src/component/Todo
+참고 파일: [src/component/todo](https://github.com/365support/wanted-pre-onboarding-frontend/blob/main/src/component/todo)
 
 - [ ] 시멘틱한 마크업
 
