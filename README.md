@@ -55,7 +55,7 @@ function App() {
 }
 ```
 
-참고 파일: [src/api/client.js](https://github.com/365support/wanted-pre-onboarding-frontend/blob/main/src/api/client.js)
+참고 파일: [App.jsx](https://github.com/365support/wanted-pre-onboarding-frontend/blob/main/App.jsx)
 
 <br />
 
